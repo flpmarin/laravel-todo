@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>to do list</title>
-</head>
-<body>
-    <h1>Tareas</h1>
+@extends('layouts.app') 
+
+@section('title', 'crear Tareas') <!-- Cambia el título dinámicamente -->
+
+@section('content')
+    <h2>Lista de Tareas</h2>
     <ul>
         @foreach ($tasks as $task)
             <li>{{ $task->name }}</li>
         @endforeach
     </ul>
-</body>
-</html>
+@endsection
