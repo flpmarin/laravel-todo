@@ -1,7 +1,7 @@
 /vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+/node_modules/
+/npm-debug.log
+/yarn-error.log
 
 # Laravel 4 specific
 bootstrap/compiled.php
@@ -21,3 +21,17 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+
+# Agregar cambios del remoto
+/.phpunit.cache
+/public/build
+.env.backup
+.env.production
+.phpactor.json
+Homestead.json
+Homestead.yaml
+auth.json
+/.fleet
+/.idea
+/.vscode
+/.zed
