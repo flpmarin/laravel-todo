@@ -15,8 +15,7 @@
         @yield('content') <!-- Aquí se insertará el contenido específico de cada vista -->
     </div>
 
-    <footer>
-        <p>&copy; 2024 Mi Aplicación</p>
-    </footer>
+    
+    
 </body>
 </html>

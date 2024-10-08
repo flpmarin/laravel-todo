@@ -7,8 +7,20 @@ use App\Models\Task;
 
 class TaskController extends Controller
 {
-    public function index(){
+    public function home()
+    {
+        return view('welcome');
+    }
+
+    public function index()
+    {
         $tasks = Task::all(); // Recupera todas las tareas de la base de datos
         return view('task.index', compact('tasks'));
+    }
+
+    public function store(Request $request)
+    {
+        Task::create($request->all());
+        return redirect()->back();
     }
 }
