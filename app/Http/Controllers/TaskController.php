@@ -23,4 +23,11 @@ class TaskController extends Controller
         Task::create($request->all());
         return redirect()->back();
     }
+
+    public function destroy($id)
+    {
+        $task = Task::findOrFail($id);
+        $task->delete();
+        return redirect()->back();
+    }
 }

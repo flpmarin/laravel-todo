@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
 {
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'description'];  //si quiero q todos los campos se puedan asignar usaria: protected $guarded = [];
 }
